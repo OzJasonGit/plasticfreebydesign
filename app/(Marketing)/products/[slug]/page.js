@@ -1,17 +1,29 @@
 'use client';
 
-import { useEffect, useState, useContext } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import { toast } from 'sonner';
 import Image from 'next/image';
 import Link from 'next/link';
 import parse from 'html-react-parser';
 import styles from './saleslanding.module.css';
-import Header from '@/components/Header/Header';
+import Menu_White from '@/components/Menu_White/menu_white';
+import Sides from '@/components/Sides/sides_white';
+import Header_White from '@/components/Header_White/Header_White';
+import Subfooter_White from '@/components/Subfooter_White/subfooter_white';
 import Footer from '@/components/Footer/Footer_White';
+import Header from '@/components/Header/Header';
+import Services_1 from '@/components/services_1/services_1';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import handleCheckout from '@/components/Payment/payment';
+import PayPalButton from '@/components/Payment/PayPalButton';
 import { CartContext } from '@/components/Context/CartContext';
+import { useContext } from 'react';
+
+
+
+
 
 const ProductDetailpage = () => {
   const { slug } = useParams();
@@ -19,7 +31,7 @@ const ProductDetailpage = () => {
   const [loading, setLoading] = useState(true);
   const [relatedProducts, setRelatedProducts] = useState([]);
   const [licenseType, setLicenseType] = useState('commercial');
-  const { addToCart } = useContext(CartContext) || {};
+const { addToCart } = useContext(CartContext);
   const router = useRouter();
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -100,11 +112,12 @@ const ProductDetailpage = () => {
     return (
       <>
         <Header />
-        <div className="pt-20 min-h-screen bg-gray-50">
-          <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
-            <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-blue-600"></div>
-          </div>
+        <Sides />
+        <Services_1 />
+        <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+          <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-blue-600"></div>
         </div>
+        <Subfooter_White />
         <Footer />
       </>
     );
@@ -113,12 +126,14 @@ const ProductDetailpage = () => {
   if (!product) {
     return (
       <>
-        <Header />
-        <div className="pt-20 min-h-screen bg-gray-50">
-          <section className={styles.center_holder}>
-            <p className="text-gray-500 text-center">Product not found</p>
-          </section>
-        </div>
+        <Menu_White />
+        <Header_White />
+        <Sides />
+        <Services_1 />
+        <section className={styles.center_holder}>
+          <p className="text-gray-500 text-center">Product not found</p>
+        </section>
+        <Subfooter_White />
         <Footer />
       </>
     );
@@ -126,9 +141,12 @@ const ProductDetailpage = () => {
 
   return (
     <>
-      <Header />
-      <div key={product._id} className="pt-20 bg-gray-50 min-h-screen">
-        <section id={styles.SHADOW_SECTION_BLOG} className={`${styles.center_holder} px-4 py-8 max-w-7xl mx-auto`}>
+<Header />
+      <Sides />
+      <Services_1 />
+
+      <div key={product._id}>
+        <section id={styles.SHADOW_SECTION_BLOG} className={styles.center_holder}>
           <div className={styles.grid_0_scroll}>
             <div id={styles.SALES_GRID_HOLDER}>
 
@@ -246,29 +264,22 @@ const ProductDetailpage = () => {
                 <div id={styles.C4}>
                   <div id={styles.CHECKOUT_GRID}>
 
-                        <div id={styles.CART}>
+                        <div id={styles.ADD_TO_CART}>
                           <Button
-                            variant="default"
-                            className="bg-blue-600 hover:bg-blue-700 text-white"
-                            style={{ width: '100%', height: '100%' }}
                             onClick={() => {
-                              if (addToCart) {
-                                addToCart({
-                                  id: product._id,
-                                  title: product.title,
-                                  price: currentPrice,
-                                  image: product.image,
-                                  quantity: 1
-                                });
-                                toast.success('Added to cart!');
-                              } else {
-                                toast.error('Cart functionality not available');
-                              }
+                              addToCart({
+                                _id: product._id,
+                                title: product.title,
+                                price: licenseType === 'commercial' ? product.commercial_price : product.student_price,
+                                image: product.image,
+                              });
+                              toast.success(' Product added to cart!');
                             }}
+                            style={{ width: '100%', height: '100%' }}
                           >
                             Add To Cart
                           </Button>
-                        </div>
+                        </div>                 
 
                         <div id={styles.STRIPE}>
                           <Button
@@ -276,8 +287,15 @@ const ProductDetailpage = () => {
                             className="border border-solid rounded-md border-stone-800"
                             style={{ width: '100%', height: '56px' }}
                             onClick={() => {
-                              // Payment functionality can be added here later
-                              console.log('Checkout clicked for:', product.title);
+                              handleCheckout({
+                                products: [{
+                                  title: product.title,
+                                  price: currentPrice,
+                                  image: product.image,
+                                  quantity: 1
+                                }],
+                                currency: 'USD',
+                              });
                             }}
                           >
                             Checkout
@@ -286,7 +304,21 @@ const ProductDetailpage = () => {
 
                         <div id={styles.PAYPAL}>
                           <br/>
-                          <p className="text-sm text-gray-500">Payment options coming soon</p>
+                         
+
+                          <PayPalButton
+                            amount={currentPrice}
+                            products={[{
+                              title: product.title,
+                              price: currentPrice,
+                              image: product.image,
+                              quantity: 1
+                            }]}
+                            currency="USD"
+                            onSuccess={(orderId) => {
+                              if (orderId) router.push(`/success?orderId=${orderId}`);
+                            }}
+                          />
                         </div>
 
                         <div id={styles.MORE_OPTIONS}>
@@ -330,7 +362,7 @@ const ProductDetailpage = () => {
           </div>
         </section>
 
-        <section id={styles.SHADOW_SECTION_BLOG} className={`${styles.center_holder} px-4 py-8 max-w-7xl mx-auto`}>
+        <section id={styles.SHADOW_SECTION_BLOG} className={styles.center_holder}>
           <div className={styles.grid_0_scroll}>
             <div id={styles.BOUGHT_TOGETHER_GRID}>
               {relatedProducts.length > 0 && (
@@ -417,6 +449,7 @@ const ProductDetailpage = () => {
         </section>
       </div>
 
+      <Subfooter_White />
       <Footer />
     </>
   );

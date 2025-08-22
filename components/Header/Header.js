@@ -393,25 +393,25 @@ export default function Header() {
                        </div>
                        <div className="py-1">
                          <Link
-                           href="/profile"
+                            href="/profile"
                            className="block w-full text-left px-4 py-3 text-sm text-stone-300 hover:text-white hover:bg-stone-800 transition-colors duration-200 rounded-lg mx-2"
                            onClick={() => setIsDropdownOpen(false)}
-                           >
-                             <span className="flex items-center">
+                          >
+                            <span className="flex items-center">
                              <FontAwesomeIcon icon={faUser} className="mr-3 w-4 h-4" />
-                               Profile
-                             </span>
+                              Profile
+                            </span>
                          </Link>
-                           <button
-                             onClick={handleLogout}
+                          <button
+                            onClick={handleLogout}
                            className="block w-full text-left px-4 py-3 text-sm text-stone-300 hover:text-white hover:bg-stone-800 transition-colors duration-200 rounded-lg mx-2"
-                           >
-                             <span className="flex items-center">
+                          >
+                            <span className="flex items-center">
                              <FontAwesomeIcon icon={faSignOutAlt} className="mr-3 w-4 h-4" />
                              Sign out
-                             </span>
-                           </button>
-                         </div>
+                            </span>
+                          </button>
+                        </div>
                      </div>
                    )}
                 </div>
