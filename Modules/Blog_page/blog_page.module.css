@@ -1,0 +1,2900 @@
+/*SECTION_2////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*FONTS///////////////////////////////////////////////////////////////////////////////////////////*/
+#_H1 {
+    margin-bottom: 0px;
+    font-size: 1.75rem;
+    line-height: 1.8rem;
+}
+
+
+#_H2 {
+    margin-bottom: 0px;
+    font-size: 1.15rem;
+    line-height: 1.35rem;
+}
+
+
+#_H3 {
+    margin-bottom: 0px;
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+}
+
+
+#_H3_2 {
+    margin-bottom: 0px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+#_H4 {
+    margin-bottom: 0px;
+}
+
+
+#_H5 {
+    margin-bottom: -2.5px;
+}
+
+
+#TEXT_OUTLINE {
+    -webkit-text-stroke: 1.85px rgb(120, 120, 120);
+}
+
+/*FONTS///////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+/*ALL///////////////////////////////////////////////////////////////////////////////////////////*/
+.center_holder {
+    position: relative;
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: aliceblue;
+    margin: 0;
+}
+
+
+#NAV_GRID {  
+    width: 100vw;
+    height: 100%;
+    top: 0px;
+    max-width: 1820px;
+    display: grid;
+    grid-column-gap: 0;
+    grid-row-gap: 0px;
+    grid-template-rows: 0px auto 20px;
+    grid-template-columns: 20px 120px 20px 1fr 20px 120px 20px;
+    grid-template-areas:
+        ". . . . . . ."
+        ". BANNER-1 . MAIN_AREA . BANNER-2 .";
+}
+
+#NAVIGATION {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    grid-row-gap: 10px;
+    grid-template-areas:
+            "1"
+            "2"
+            "3"
+            "4"
+            "5"
+            "6"
+            "7"
+            "8"
+            "9"
+            "10";
+    padding-right: 40px;
+}
+
+
+
+#AFFILIATE_HOLDER {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+            "SUBSCRIBE"
+            "AFFILIATE"
+            "PFBD";
+}
+
+#SUBSRIBE_HOLDER {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 180px;
+    grid-template-rows: auto auto 70px;
+    grid-template-areas:
+        "TAG_MAIN TAG_MAIN"
+        "SUB_MAIN SUB_MAIN"
+        "FORM FORM";
+
+
+}
+
+
+#GRID_NAV_ADVERT {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "NAV NAV . . . . . . . AFFILIATE AFFILIATE AFFILIATE";
+    top: 1615px; 
+    
+}
+
+.grid_0 {
+    position: relative;
+    width: 100%;
+    max-width: 1520px;
+    background-color: transparent;
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    grid-template-rows: 100px auto auto 20px;
+    grid-template-columns: 20px 120px 20px 1fr 20px 120px 20px;
+    grid-template-areas: ". . . . . . ."
+        ". BANNER-1 . MAIN-AREA . BANNER-2 ."
+        ". VIDEO_B VIDEO_B VIDEO_B VIDEO_B VIDEO_B ."
+        ". . . . . . .";
+}
+
+
+.grid_0_main {
+    width: 100%;
+    max-width: 1520px;
+    background-color: transparent;
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 40px;
+    grid-template-rows: 0px auto 0px;
+    grid-template-columns: 20px 120px 20px 1fr 20px 120px 20px;
+    grid-template-areas: ". . . . . . ."
+        ". BANNER-1 . MAIN-AREA . BANNER-2 ."
+        ". . . . . . .";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grid_0_blog {
+    position: relative;
+    width: 100%;
+    max-width: 1820px;
+    background-color: transparent;
+    display: grid;
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+    grid-template-rows: 40px auto 0px;
+    grid-template-columns: 20px 120px 20px 1fr 20px 120px 20px;
+    grid-template-areas:
+        ". . . . . . ."
+        ". BANNER-1 . MAIN_AREA . BANNER-2 ."
+        ". . . . . . .";
+}
+
+
+
+.grid_0_blog_end {
+    position: relative;
+    width: 100%;
+    max-width: 1820px;
+    background-color: transparent;
+    display: grid;
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+    grid-template-rows: 40px auto 150px;
+    grid-template-columns: 20px 120px 20px 1fr 20px 120px 20px;
+    grid-template-areas:
+        ". . . . . . ."
+        ". BANNER-1 . MAIN_AREA . BANNER-2 ."
+        ". . . . . . .";
+}
+
+
+
+
+#MAIN_IMAGE {
+    height: 600px;
+}
+
+
+#SUB_IMAGE_HEIGHT {
+    height: 350px;
+}
+
+
+
+
+#FIRST_TEXT_HOLDER {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            ". . . TITLE TITLE TITLE TITLE . . AFFILIATE AFFILIATE AFFILIATE"
+            ". . . VIDEO VIDEO VIDEO VIDEO . . AFFILIATE AFFILIATE AFFILIATE"
+            ". . . TEXT TEXT TEXT TEXT . . AFFILIATE AFFILIATE AFFILIATE";
+}
+
+
+
+#TEXT_HOLDER {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        ". . . TITLE TITLE TITLE TITLE . . . . ."
+        ". . . TEXT TEXT TEXT TEXT . . . . .";
+}
+
+
+#IMAGE_TEXT_HOLDER {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        ". . . TITLE TITLE TITLE TITLE . . . . ."
+        ". . . IMAGE IMAGE IMAGE IMAGE . . . . ."
+        ". . . TEXT TEXT TEXT TEXT . . . . .";
+}
+
+
+
+
+
+
+.READ_NEXT {
+    display: grid;
+    grid-template-columns: 350px 350px 1fr;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 0px;
+    grid-column-gap: 30px;
+    grid-template-areas:
+        " TITLE TITLE . "
+        " READ_1 READ_1 READ_3 "
+        " FOOTER FOOTER . ";
+}
+
+.READ_NEXT_SCROLL {
+    display: grid;
+    grid-template-columns: 350px 350px 1fr;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    grid-template-areas:
+        " TITLE TITLE . "
+        " READ_1 READ_1 READ_3 "
+        " FOOTER FOOTER . ";
+    overflow-x: scroll;
+}
+
+
+
+#READ_SCROLL {
+    display: grid;
+    grid-area: READ_1;
+    position: relative;
+}
+
+#READ_HOLDER {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    grid-area: READ_1;
+    grid-template-columns: 350px 350px 350px ;
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    grid-template-areas:
+    
+        " READ_1 READ_2 READ_3 ";
+}
+
+
+.read_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px auto;
+    grid-row-gap: 20px;
+    grid-template-areas:
+            " IMAGE "
+            " TEXT";
+}
+
+
+
+
+
+
+
+
+
+
+
+.grid_0_blogimage {
+    grid-area: SUB;
+    position: relative;
+    width: 100%;
+    max-width: 1520px;
+    background-color: transparent;
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    grid-template-rows: 0px auto 0px;
+    grid-template-columns: 0px 120px 20px 1fr 20px 120px 0px;
+    grid-template-areas: ". . . . . . ."
+        ". MAIN-AREA MAIN-AREA MAIN-AREA MAIN-AREA MAIN-AREA ."
+        ". . . . . . .";
+}
+
+
+
+.grid_0_blogimageholder {
+    position: relative;
+    width: 100%;
+    max-width: 1820px;
+    background-color: transparent;
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    grid-template-rows: 0px auto 0px;
+    grid-template-columns: 20px 120px 20px 1fr 20px 120px 20px;
+    grid-template-areas: ". . . . . . ."
+        ". . . SUB . . ."
+        ". . . . . . .";
+}
+
+
+
+
+
+#BLOGIMAGE_HOLDER {
+    width: 100%;
+    height: auto;
+    display:inline-block;
+    grid-area: MAIN-AREA;
+    position: relative;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#B_IMAGE {
+    position: relative;
+    grid-area: IMAGE;
+    overflow: hidden;
+}
+
+
+#SHADOW_SECTION {
+    position: relative;
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(23, 23, 23);
+    z-index: -30000;
+    ;
+    top: 0px;
+}
+
+#SHADOW_SECTION_BLOG {
+    position: relative;
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(23, 23, 23);
+    z-index: 1;
+    top: 0px;
+    left: 0;
+}
+
+#SHADOW_SECTION_TITLE {
+    position: relative;
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: transparent;
+    z-index: -20000;
+}
+
+
+
+
+#SHADOW_SECTION_SIDE {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+
+
+
+#SHADOW_SECTION_TOP {
+    position: relative;
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: transparent;
+    z-index: -20000;
+    left: -100vw;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 1.5px;
+}
+
+/*ALL///////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+/*SECTION_1///////////////////////////////////////////////////////////////////////////////////////////*/
+.grid_0_subscribe {
+    position: relative;
+    width: 100%;
+    max-width: 1820px;
+    background-color: transparent;
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    grid-template-rows: 170px auto 0px;
+    grid-template-columns: 20px 120px 20px 1fr 20px 120px 20px;
+    grid-template-areas: ". . . . . . ."
+        ". . . SUB . . ."
+        ". . . . . . .";
+}
+
+
+.grid_0_tag {
+    position: relative;
+    width: 100%;
+    max-width: 1820px;
+    background-color: transparent;
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    grid-template-rows: 0px auto 40px;
+    grid-template-columns: 20px 120px 20px 1fr 20px 120px 20px;
+    grid-template-areas: ". . . . . . ."
+        ". . . SUB . . ."
+        ". . . . . . .";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sub_head {
+    position: relative;
+    grid-area: SUB;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-column-gap: 40px;
+    grid-template-columns: 180px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "BC BC BC BC BC BC BC BC AUTHOR AUTHOR AUTHOR AUTHOR AUTHOR AUTHOR";
+    left: 0;
+}
+
+
+
+#AUTHOR_GRID {
+    display: grid;
+    grid-area: AUTHOR;
+    height: auto;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 110px;
+    grid-template-rows: 110px auto auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    grid-template-areas:
+            "NUMBER NUMBER AUTHOR"
+            ". NAME NAME"
+            ". . .";
+
+}
+
+
+
+#NUMBER_GRID {
+    display: grid;  
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px auto auto;   
+    grid-template-areas:
+        "."
+        "NUMBER"
+        "SHARE";
+}
+
+
+#SHARE {
+    display: grid;
+    grid-template-columns: 60px 35px 35px 35px 35px;
+    grid-template-rows: 35px;
+    grid-template-areas:
+        "SHARE LINKEDIN TWITTER FACEBOOK REDDIT";
+}
+
+
+
+.sub_head_2 {
+    position: relative;
+    grid-area: SUB;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-column-gap: 40px;
+    grid-template-columns: 180px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "BC BC BC BC BC BC BC BC . . AUTHOR AUTHOR AUTHOR AUTHOR";
+    left: 0;
+}
+
+
+
+#SUBSCRIBE {
+    position: relative;
+    grid-area: BC;
+    width: 100%;
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 180px;
+    grid-template-rows: 0px auto auto;
+    grid-template-areas:
+        "ICON . "
+        "TAG_MAIN TAG_MAIN"
+        "SUB_MAIN SUB_MAIN";
+}
+
+#SUB_ICON {
+    grid-area: ICON;
+}
+
+#MAIN_TAG {
+    grid-area: TAG_MAIN;
+}
+
+#SUB_TAG {
+    grid-area: SUB_MAIN;
+}
+
+#FORM {
+    grid-area: FORM;
+    height: 100%;
+}
+
+#SUB_BUTTON {
+    grid-area: BUTTON;
+    height: 100%;
+}
+
+/*SECTION_1///////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECTION_3////TIKTOK/////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+.linkedin {
+    color: rgb(231 229 228);
+}
+
+.twitter {
+    color: rgb(231 229 228);
+}
+
+.facebook {
+    color: rgb(231 229 228);
+}
+
+.reddit {
+    color: rgb(231 229 228);
+}
+
+
+
+
+
+
+
+
+/*SECTION_3////TIKTOK/////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+/*SECTION_4////TITLE///////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+/*SECTION_4////TITLE///////////////////////////////////////////////////////////////////////////////////*/
+#SIDE_TEXT_HOLDER {
+    grid-area: MAIN-AREA;
+    display: grid;
+    width: 100%;
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+    grid-template-columns: 200px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        
+        "SIDE_NAV TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT ADVERT ADVERT ADVERT"
+}
+
+
+
+
+#SUB_TEXT_HOLDER {
+    position: relative;
+    grid-area: TEXT;
+    top: 60px;
+}
+
+
+#SIDE_NAV_HOLDER {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    grid-area: SIDE_NAV;
+}
+
+
+#SIDE_NAV {
+    width: 100%;
+    position: sticky;
+    top: 200px;
+    grid-area: SIDE_NAV;
+}
+
+
+#DISCLAIMER_HOLDER {
+    position: relative;
+    grid-area: DISCLAIMER;
+}
+
+
+
+
+
+
+
+
+
+
+/*SECTION_6////WORLD??/////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*BREAKPOINT_1////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*ALL///////////////////////////////////////////////////////////////////////////////////////////*/
+@media all and (min-width: 960px) and (max-width: 1280px) {
+
+
+    .center_holder {
+        position: relative;
+        width: 100%;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        background-color: aliceblue;
+        margin: 0;
+    }
+    
+    
+    #NAV_GRID {  
+        width: 100vw;
+        height: 100%;
+        top: 0px;
+        max-width: 1820px;
+        display: grid;
+        grid-column-gap: 0;
+        grid-row-gap: 0px;
+        grid-template-rows: 0px auto 20px;
+        grid-template-columns: 40px 1fr 40px;
+        grid-template-areas:
+            ". . ."
+            ". MAIN_AREA .";
+    }
+    
+    #NAVIGATION {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+        grid-row-gap: 10px;
+        grid-template-areas:
+                "1"
+                "2"
+                "3"
+                "4"
+                "5"
+                "6"
+                "7"
+                "8"
+                "9"
+                "10";
+    }
+    
+    
+    
+    #AFFILIATE_HOLDER {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+                "SUBSCRIBE"
+                "AFFILIATE"
+                "PFBD";
+    }
+    
+    #SUBSRIBE_HOLDER {
+        display: grid;
+        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+        grid-template-columns: 1fr 180px;
+        grid-template-rows: auto auto 70px;
+        grid-template-areas:
+            "TAG_MAIN TAG_MAIN"
+            "SUB_MAIN SUB_MAIN"
+            "FORM FORM";
+    
+    
+    }
+    
+    
+    #GRID_NAV_ADVERT {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "NAV NAV . . . . . . . AFFILIATE AFFILIATE AFFILIATE";
+        top: 1615px; 
+        
+    }
+    
+    .grid_0 {
+        position: relative;
+        width: 100%;
+        max-width: 1520px;
+        background-color: transparent;
+        display: grid;
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+        grid-template-rows: 100px auto auto 20px;
+        grid-template-columns: 40px 1fr 40px;
+        grid-template-areas: " . . ."
+            ". MAIN_AREA ."
+            ". VIDEO_B ."
+            ". . .";
+    }
+    
+    
+    .grid_0_main {
+        width: 100%;
+        max-width: 1520px;
+        background-color: transparent;
+        display: grid;
+        grid-column-gap: 0px;
+        grid-row-gap: 40px;
+        grid-template-rows: 0px auto 0px;
+        grid-template-columns: 40px 1fr 40px;
+        grid-template-areas: ". . ."
+            ". MAIN-AREA ."
+            ". . .";
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .grid_0_blog {
+        position: relative;
+        width: 100%;
+        max-width: 1820px;
+        background-color: transparent;
+        display: grid;
+        grid-column-gap: 0;
+        grid-row-gap: 20px;
+        grid-template-rows: 40px auto 0px;
+        grid-template-columns: 40px 1fr 40px;
+        grid-template-areas:
+            ". . ."
+            ". MAIN_AREA ."
+            ". . .";
+    }
+    
+    
+    
+    .grid_0_blog_end {
+        position: relative;
+        width: 100%;
+        max-width: 1820px;
+        background-color: transparent;
+        display: grid;
+        grid-column-gap: 0;
+        grid-row-gap: 20px;
+        grid-template-rows: 40px auto 150px;
+        grid-template-columns: 40px 1fr 40px;
+        grid-template-areas:
+            ". . ."
+            ". MAIN_AREA ."
+            ". . .";
+    }
+    
+    
+    
+    
+    #MAIN_IMAGE {
+        height: 600px;
+    }
+    
+    
+    #SUB_IMAGE_HEIGHT {
+        height: 350px;
+    }
+    
+    
+    
+    
+    #FIRST_TEXT_HOLDER {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                ". . . TITLE TITLE TITLE TITLE TITLE . AFFILIATE AFFILIATE AFFILIATE"
+                ". . . VIDEO VIDEO VIDEO VIDEO VIDEO . AFFILIATE AFFILIATE AFFILIATE"
+                ". . . TEXT TEXT TEXT TEXT TEXT . AFFILIATE AFFILIATE AFFILIATE";
+    }
+    
+    
+    
+    #TEXT_HOLDER {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            ". . . TITLE TITLE TITLE TITLE TITLE . . . ."
+            ". . . TEXT TEXT TEXT TEXT TEXT . . . .";
+    }
+    
+    
+    #IMAGE_TEXT_HOLDER {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            ". . . TITLE TITLE TITLE TITLE TITLE . . . ."
+            ". . . IMAGE IMAGE IMAGE IMAGE IMAGE . . . ."
+            ". . . TEXT TEXT TEXT TEXT TEXT . . . .";
+    }
+    
+    
+    
+    
+    
+    
+    .READ_NEXT {
+        display: grid;
+        grid-template-columns: 350px 350px 1fr;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 0px;
+        grid-column-gap: 30px;
+        grid-template-areas:
+            " TITLE TITLE . "
+            " READ_1 READ_1 READ_3 "
+            " FOOTER FOOTER . ";
+    }
+    
+    .READ_NEXT_SCROLL {
+        display: grid;
+        grid-template-columns: 350px 350px 1fr;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+        grid-template-areas:
+            " TITLE TITLE . "
+            " READ_1 READ_1 READ_3 "
+            " FOOTER FOOTER . ";
+        overflow-x: scroll;
+    }
+    
+    
+    
+    #READ_SCROLL {
+        display: grid;
+        grid-area: READ_1;
+        position: relative;
+    }
+    
+    #READ_HOLDER {
+        display: grid;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        grid-area: READ_1;
+        grid-template-columns: 350px 350px 350px ;
+        grid-template-rows: auto;
+        grid-column-gap: 30px;
+        grid-template-areas:
+        
+            " READ_1 READ_2 READ_3 ";
+    }
+    
+    
+    .read_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px auto;
+        grid-row-gap: 20px;
+        grid-template-areas:
+                " IMAGE "
+                " TEXT";
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .grid_0_blogimage {
+        grid-area: SUB;
+        position: relative;
+        width: 100%;
+        max-width: 1520px;
+        background-color: transparent;
+        display: grid;
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+        grid-template-rows: 0px auto 0px;
+        grid-template-columns: 40px 1fr 40px;
+        grid-template-areas: ". . ."
+            ". MAIN-AREA ."
+            ". . .";
+    }
+    
+    
+    
+    .grid_0_blogimageholder {
+        position: relative;
+        width: 100%;
+        max-width: 1820px;
+        background-color: transparent;
+        display: grid;
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+        grid-template-rows: 0px auto 0px;
+        grid-template-columns: 40px 1fr 40px;
+        grid-template-areas: ". . ."
+            ". SUB ."
+            ". . .";
+    }
+    
+    
+    
+    
+    
+    #BLOGIMAGE_HOLDER {
+        width: 100%;
+        height: auto;
+        display:inline-block;
+        grid-area: MAIN-AREA;
+        position: relative;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #B_IMAGE {
+        position: relative;
+        grid-area: IMAGE;
+        overflow: hidden;
+    }
+    
+    
+    #SHADOW_SECTION {
+        position: relative;
+        width: 100%;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        background-color: rgb(23, 23, 23);
+        z-index: -30000;
+        ;
+        top: 0px;
+    }
+    
+    #SHADOW_SECTION_BLOG {
+        position: relative;
+        width: 100%;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        background-color: rgb(23, 23, 23);
+        z-index: 1;
+        top: 0px;
+        left: 0;
+    }
+    
+    #SHADOW_SECTION_TITLE {
+        position: relative;
+        width: 100%;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        background-color: transparent;
+        z-index: -20000;
+    }
+    
+    
+    
+    
+    #SHADOW_SECTION_SIDE {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        background-color: transparent;
+    }
+    
+    
+    
+    
+    #SHADOW_SECTION_TOP {
+        position: relative;
+        width: 100%;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        background-color: transparent;
+        z-index: -20000;
+        left: -100vw;
+    }
+    
+    
+    .container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        border-radius: 1.5px;
+    }
+    
+    /*ALL///////////////////////////////////////////////////////////////////////////////////////////*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*SECTION_1///////////////////////////////////////////////////////////////////////////////////////////*/
+    .grid_0_subscribe {
+        position: relative;
+        width: 100%;
+        max-width: 1820px;
+        background-color: transparent;
+        display: grid;
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+        grid-template-rows: 170px auto 0px;
+        grid-template-columns: 40px 1fr 40px;
+        grid-template-areas: ". . ."
+            ". SUB ."
+            ". . .";
+    }
+    
+    
+    .grid_0_tag {
+        position: relative;
+        width: 100%;
+        max-width: 1820px;
+        background-color: transparent;
+        display: grid;
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+        grid-template-rows: 0px auto 40px;
+        grid-template-columns: 40px 1fr 40px;
+        grid-template-areas: ". . ."
+            ". SUB  ."
+            ". . .";
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .sub_head {
+        position: relative;
+        grid-area: SUB;
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-column-gap: 40px;
+        grid-template-columns: 180px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "BC BC BC BC BC BC BC BC AUTHOR AUTHOR AUTHOR AUTHOR AUTHOR AUTHOR";
+        left: 0;
+    }
+    
+    
+    
+    #AUTHOR_GRID {
+        display: grid;
+        grid-area: AUTHOR;
+        height: auto;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 110px;
+        grid-template-rows: 110px auto auto;
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+        grid-template-areas:
+                "NUMBER NUMBER AUTHOR"
+                ". NAME NAME"
+                ". . .";
+    
+    }
+    
+    
+    
+    #NUMBER_GRID {
+        display: grid;  
+        grid-template-columns: 1fr;
+        grid-template-rows: 20px auto auto;   
+        grid-template-areas:
+            "."
+            "NUMBER"
+            "SHARE";
+    }
+    
+    
+    #SHARE {
+        display: grid;
+        grid-template-columns: 60px 35px 35px 35px 35px;
+        grid-template-rows: 35px;
+        grid-template-areas:
+            "SHARE LINKEDIN TWITTER FACEBOOK REDDIT";
+    }
+    
+    
+    
+    .sub_head_2 {
+        position: relative;
+        grid-area: SUB;
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-column-gap: 40px;
+        grid-template-columns: 180px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "BC BC BC BC BC BC BC BC . . AUTHOR AUTHOR AUTHOR AUTHOR";
+        left: 0;
+    }
+    
+    
+    
+    #SUBSCRIBE {
+        position: relative;
+        grid-area: BC;
+        width: 100%;
+        display: grid;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        grid-template-columns: 1fr 180px;
+        grid-template-rows: 0px auto auto;
+        grid-template-areas:
+            "ICON . "
+            "TAG_MAIN TAG_MAIN"
+            "SUB_MAIN SUB_MAIN";
+    }
+    
+    #SUB_ICON {
+        grid-area: ICON;
+    }
+    
+    #MAIN_TAG {
+        grid-area: TAG_MAIN;
+    }
+    
+    #SUB_TAG {
+        grid-area: SUB_MAIN;
+    }
+    
+    #FORM {
+        grid-area: FORM;
+        height: 100%;
+    }
+    
+    #SUB_BUTTON {
+        grid-area: BUTTON;
+        height: 100%;
+    }
+    
+    /*SECTION_1///////////////////////////////////////////////////////////////////////////////////////////*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*SECTION_3////TIKTOK/////////////////////////////////////////////////////////////////////////////////*/
+    
+    
+    
+    .linkedin {
+        color: rgb(231 229 228);
+    }
+    
+    .twitter {
+        color: rgb(231 229 228);
+    }
+    
+    .facebook {
+        color: rgb(231 229 228);
+    }
+    
+    .reddit {
+        color: rgb(231 229 228);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /*SECTION_3////TIKTOK/////////////////////////////////////////////////////////////////////////////////*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*SECTION_4////TITLE///////////////////////////////////////////////////////////////////////////////////*/
+    
+    
+    
+    
+    
+    
+    /*SECTION_4////TITLE///////////////////////////////////////////////////////////////////////////////////*/
+    #SIDE_TEXT_HOLDER {
+        grid-area: MAIN-AREA;
+        display: grid;
+        width: 100%;
+        grid-column-gap: 40px;
+        grid-row-gap: 20px;
+        grid-template-columns: 200px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            
+            "SIDE_NAV TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT ADVERT ADVERT ADVERT"
+    }
+    
+    
+    
+    
+    #SUB_TEXT_HOLDER {
+        position: relative;
+        grid-area: TEXT;
+        top: 60px;
+    }
+    
+    
+    #SIDE_NAV_HOLDER {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        grid-area: SIDE_NAV;
+    }
+    
+    
+    #SIDE_NAV {
+        width: 100%;
+        position: sticky;
+        top: 200px;
+        grid-area: SIDE_NAV;
+    }
+    
+    
+    #DISCLAIMER_HOLDER {
+        position: relative;
+        grid-area: DISCLAIMER;
+    }
+   
+}
+
+/*SECTION_11////ASTRONAUT///////////////////////////////////////////////////////////////////////////////*/
+/*BREAKPOINT_2////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*BREAKPOINT_3////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*FONTS/////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*FONTS/////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*ALL/////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media all and (min-width: 480px) and (max-width: 960px) {
+    .center_holder {
+        width: 100%;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        background-color: aliceblue;
+        margin: 0;
+    }
+
+
+    #MAIN_NAV {
+        display: none;
+    }
+
+
+
+    #SHADOW_SECTION_BLOG {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #171717;
+        top: 0;
+    }
+    
+
+
+    .grid_0_blogimageholder {
+        position: relative;
+            width: 100%;
+            max-width: 1520px;
+            background-color: transparent;
+            display: grid;
+            grid-column-gap: 0;
+            grid-row-gap: 20px;
+            grid-template-rows: 0 auto 0;
+            grid-template-columns: 40px 1fr 40px;
+            grid-template-areas:
+                ". . ."
+                ". SUB ."
+                ". . .";
+    }
+
+
+    #BLOGIMAGE_HOLDER {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-area: MAIN-AREA;
+        position: relative;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    #MAIN_IMAGE {
+        height: 300px;
+    }
+
+
+    #VIDEO_HEIGHT {
+        height: 300px;
+    }
+
+    #SUB_IMAGE_HEIGHT {
+        height: 300px;
+    }
+
+
+
+    #FIRST_TEXT_HOLDER {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            " TITLE "
+            "VIDEO "
+            " TEXT";
+    }
+
+
+    #IMAGE_TEXT_HOLDER {
+        grid-template-columns:  1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "TITLE "
+            "IMAGE"
+            "TEXT ";   }
+
+
+    .grid_0 {
+        position: relative;
+        width: 100%;
+        background-color: rgb(23 23 23);
+        display: grid;
+
+        padding-left: 30px;
+        padding-right: 30px;
+        grid-row-gap: 40px;
+        grid-template-rows: 0px auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: "  .  "
+            " MAIN-AREA ";
+        margin-bottom: 0px;
+    }
+
+
+
+    .grid_0_tag {
+        position: relative;
+        width: 100%;
+        max-width: 1820px;
+        background-color: transparent;
+        display: grid;
+        grid-column-gap: 0;
+        grid-row-gap: 20px;
+        grid-template-columns: 40px 1fr 40px;
+        grid-template-areas:
+            ". . ."
+            ". SUB ."
+            ". . .";   
+        }
+
+
+        
+
+
+    
+
+
+    .sub_head {
+        position: relative;
+        grid-area: SUB;
+        display: grid;
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        grid-row-gap: 30px;
+        grid-column-gap: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "BC "
+            " AUTHOR";
+        left: 0;   }
+
+
+
+
+    .sub_head_2 {
+        grid-area: SUB;
+        height: auto;
+        grid-column-gap: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "BC ";
+        left: 0;   
+    }
+
+
+    .grid_0_blog {
+        position: relative;
+        width: 100%;
+        background-color: transparent;
+        display: grid;
+        padding-left: 40px;
+        padding-right: 40px;
+        grid-row-gap: 40px;
+        grid-template-rows: 0 auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            " . "
+            " MAIN-AREA ";
+        margin-bottom: 0;
+    }
+
+
+
+    .grid_0_blog_end {
+        position: relative;
+        width: 100%;
+        max-width: 1820px;
+        background-color: transparent;
+        display: grid;
+        grid-column-gap: 0;
+        grid-row-gap: 20px;
+        grid-template-columns: 40px 1fr 40px;
+        grid-template-areas:
+            ". . ."
+            ". MAIN_AREA ."
+            ". . .";   }
+
+
+    .grid_0_main {
+        position: relative;
+        width: 100%;
+        background-color: transparent;
+        display: grid;
+
+        padding-left: 30px;
+        padding-right: 30px;
+        grid-row-gap: 40px;
+        grid-template-rows: 0px auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: "  .  "
+            " MAIN-AREA ";
+    }
+
+    .grid_0_image_left {
+        width: 100%;
+        max-width: 960px;
+        background-color: transparent;
+        display: grid;
+        grid-column-gap: 30px;
+        grid-row-gap: 20px;
+        grid-template-rows: 60px auto auto 20px;
+        grid-template-columns: 0px 1fr 0px;
+        grid-template-areas: ". . ."
+            ". ADVERT ."
+            ". IMAGE ."
+            ". IMAGE .";
+    }
+
+    .grid_0_image_right {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        background-color: transparent;
+        display: grid;
+        grid-column-gap: 30px;
+        grid-row-gap: 20px;
+        grid-template-rows: 20px auto 20px;
+        grid-template-columns: 0px 1fr 0px;
+        grid-template-areas: ". . ."
+            ". IMAGE_2 ."
+            ". . .";
+        margin-top: 0px;
+    }
+
+    /*ALL/////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+    /*SECTION_1///////////////////////////////////////////////////////////////////////////////////////////*/
+    .grid_0_subscribe {
+        max-width: 1520px;
+        background-color: transparent;
+        grid-column-gap: 0;
+        grid-row-gap: 20px;
+        grid-template-rows: 170px auto 20px;
+        grid-template-columns: 40px 1fr 40px;
+        grid-template-areas:
+            " . . ."
+            ". SUB ."
+            ". . .";
+    }
+
+
+
+
+    
+
+
+    
+
+
+
+    #BC {
+        display: none;
+    }
+
+    /*SECTION_1/////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+    /*SECTION_2////VIDEO////////////////////////////////////////////////////////////////////////////////////*/
+    .head {
+        position: relative;
+        grid-area: MAIN-AREA;
+        display: grid;
+        width: 100%;
+        height: 860px;
+        grid-column-gap: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0px 40px 480px 400px 700px;
+        grid-template-areas:
+            " ."
+            " BC"
+            "CONTENT"
+            "TITLE"
+            "NEWS";
+        padding-bottom: 1500px;
+    }
+
+    #NEWS {
+        grid-area: NEWS;
+        display: grid;
+        grid-row-gap: 30px;
+        grid-template-columns: (1fr 100px) (1fr min-content);
+        grid-template-rows: 30px auto 10px;
+        background-color: rgb(23 23 23);
+        width: 100%;
+        height: 100%;
+        grid-template-areas:
+            ". TOP_STORIES"
+            ". ARTICLES"
+            ". .";
+        position: relative;
+        top: -150px;
+    }
+
+    #ARTICLES_TITLE {
+        grid-area: TOP_STORIES;
+    }
+
+    #LINK_HOLDER {
+        position: relative;
+        grid-area: CONTENT;
+        overflow: hidden;
+        width: 100%;
+        left: 0px;
+    }
+
+    #ARTICLES {
+        grid-area: ARTICLES;
+        display: grid;
+        grid-row-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        width: 100%;
+        grid-template-areas:
+            "1"
+            "2"
+            "3";
+    }
+
+    #BLOG_SMALL_1 {
+        grid-area: 1;
+        width: 100%;
+        height: 100%;
+        max-height: 0;
+        display: grid;
+        grid-row-gap: 2.5px;
+        grid-column-gap: 17.5px;
+        grid-template-columns: 30px 1fr 120px;
+        grid-template-rows: 30px 60px 5px auto auto 5px auto 5px auto;
+        grid-template-areas:
+            "NUMBER TITLE IMAGE"
+            ". TITLE IMAGE"
+            ". TITLE ."
+            ". TITLE AUTHOR"
+            ". TITLE AUTHOR"
+            ". . ."
+            ". TIMESTAMP TIMESTAMP"
+            ". . ."
+            ". . BORDER";
+    }
+
+    #IMAGE_POST_NUMBER {
+        grid-area: CONTENT;
+        background: transparent;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 40px 100px 1fr 10px;
+        grid-template-rows: 60px 100px auto;
+        grid-template-areas:
+            ". . . ."
+            ". NUMBER . ."
+            ". . . .";
+        left: 0px;
+        z-index: 100000;
+    }
+
+
+
+    /*SECTION_2////VIDEO////////////////////////////////////////////////////////////////////////////////////*/
+
+
+ 
+
+
+
+
+
+
+
+
+
+    /*SECTION_6////WORLD??//////////////////////////////////////////////////////////////////////////////////*/
+    #BACKGROUND_GRID {
+        display: none;
+    }
+
+  
+
+    /*SECTION_6////WORLD??//////////////////////////////////////////////////////////////////////////////////*/
+
+
+    /*SECTION_7////ABOUT////////////////////////////////////////////////////////////////////////////////////*/
+    .main {
+        position: relative;
+        grid-area: MAIN-AREA;
+        display: grid;
+        width: 100%;
+        top: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-row-gap: 60px;
+        grid-template-areas:
+            "ABOUT"
+            "INTRO"
+            "WHO_WE_WORK_WITH"
+            "TESTIMONIAL";
+    }
+
+    #INTRO_HOLDER {
+        position: relative;
+        display: grid;
+        grid-area: INTRO;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 20px;
+        width: 100%;
+        height: 100%;
+
+        grid-template-areas:
+            "TITLE"
+            "SUBTITLE"
+            "IMAGE";
+    }
+
+
+
+    /*SECTION_7////ABOUT////////////////////////////////////////////////////////////////////////////////////*/
+
+
+    
+
+    #INTRO {
+        grid-area: TITLE;
+        position: relative;
+        width: 100%;
+    }
+
+
+    #INTRO_SUBTITLE {
+        grid-area: SUBTITLE;
+        position: relative;
+        width: 100%;
+    }
+
+
+    #MAIN_TEXT_HOLDER {
+        grid-area: MAIN-AREA;
+        display: grid;
+        width: 100%;
+        grid-column-gap: 40px;
+        grid-row-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0px auto 0px;
+        grid-template-areas:
+            "."
+            "TEXT"
+            "."
+    }
+
+
+        #TEXT_HOLDER {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "TITLE "
+                "TEXT ";   }
+
+
+    #SUB_TEXT_HOLDER {
+        position: relative;
+        grid-area: TEXT;
+        top: 0px;
+    }
+
+
+    #IMAGE {
+        grid-area: IMAGE;
+        width: 100%;
+        height: 500px;
+        max-height: 100%;
+    }
+
+
+   
+}
+
+/*BREAKPOINT_1////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 0px) and (max-width: 480px) {
+
+    /*ALL//////////////////////////////
+   
+    }/////////////////////////////////////////////////////////////////////*/
+
+    #MAIN_NAV {
+        display: none;
+    }
+
+    .grid_0_blogimageholder {
+        position: relative;
+        width: 100%;
+        background-color: transparent;
+        display: grid;
+        grid-column-gap: 0;
+        grid-row-gap: 20px;
+        grid-template-rows: 0 auto 0;
+        grid-template-columns: 30px 1fr 30px;
+        grid-template-areas:
+            ". . ."
+            ". SUB ."
+            ". . .";
+    }
+
+
+    .grid_0_main {
+        width: 100%;
+        max-width: 1640px;
+        background-color: transparent;
+        display: grid;
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+        grid-template-rows: 0px auto 0px;
+        grid-template-columns: 0px 1fr 0px;
+        grid-template-areas: ". . ."
+            "BANNER-1 MAIN_AREA BANNER-2"
+            ". . .";
+
+    }
+
+    .grid_0_blog {
+        width: 100%;      
+        background-color: transparent;
+        display: grid;
+        grid-row-gap: 40px;
+        grid-column-gap: 30px;
+        grid-template-rows: 0 auto 0;
+        grid-template-columns: 0 1fr 0;
+        grid-template-areas:
+            ". . ."
+            "BANNER-1 MAIN_AREA BANNER-2"
+            ". . .";
+    }
+
+    /*ALL///////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+    /*SECTION_1/////////////////////////////////////////////////////////////////////////////////////////////*/
+    .grid_0_subscribe {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        background-color: transparent;
+        display: grid;
+        grid-column-gap: 0;
+        grid-row-gap: 20px;
+        grid-template-rows: 170px auto 0;
+        grid-template-columns: 30px 1fr 30px;
+        grid-template-areas:
+            ". . ."
+            ". SUB ."
+            ". . .";
+    }
+
+
+
+    .grid_0_tag {
+        position: relative;
+        width: 100%;
+        background-color: transparent;
+        display: grid;
+        grid-column-gap: 0;
+        grid-row-gap: 10px;
+        grid-template-columns: 30px 1fr 30px;
+        grid-template-areas:
+            ". . ."
+            ". SUB ."
+            ". . .";
+    }
+
+
+
+        .grid_0_blog_end {
+            position: relative;
+            width: 100%;
+            background-color: transparent;
+            display: grid;
+            grid-column-gap: 0;
+            grid-row-gap: 20px;
+            grid-template-columns: 30px 1fr 30px;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                ". . ."
+                " BANNER-1 MAIN_AREA BANNER-2 "
+                ". . .";
+        }
+
+
+
+
+    #MAIN_IMAGE {
+        height: 300px;      
+    }
+
+
+    #VIDEO_HEIGHT {
+        height: 300px;
+    }
+
+    #SUB_IMAGE_HEIGHT {
+        height: 300px;
+    }
+
+
+
+
+    #IMAGE_POST_NUMBER {
+        grid-area: CONTENT;
+        background: transparent;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 40px 1fr 80px 10px;
+        grid-template-rows: 60px 80px auto;
+        grid-template-areas:
+            ". . . ."
+            ". . NUMBER  ."
+            ". . . .";
+        left: 0px;
+        z-index: 100000;
+    }
+
+
+    .head {
+        grid-area: MAIN-AREA;
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-column-gap: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px 280px 600px;
+        grid-template-areas:
+            "CONTENT"
+            "TITLE"
+            "NEWS";
+        padding-bottom: 0px
+    }
+
+
+
+
+    .sub_head {
+        position: relative;
+        grid-area: SUB;
+        display: grid;
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        grid-row-gap: 30px;
+        grid-column-gap: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "BC "
+            " AUTHOR";
+        left: 0;
+    }
+
+
+    .sub_head_2 {
+        position: relative;
+        grid-area: SUB;
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-column-gap: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "BC ";
+        left: 0;   }
+
+
+
+    #SUBSCRIBE {
+        position: relative;
+        grid-area: BC;
+        width: 100%;
+        display: grid;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "ICON"
+            "SUB_MAIN";
+    }
+
+
+    #BC {
+        display: none;
+    }
+
+
+    #MAIN_TAG {
+        grid-area: ICON;   
+    }
+
+
+    #SUB_TAG {
+        grid-area: SUB_MAIN;   
+    }
+
+
+
+
+    #AUTHOR_GRID {
+        display: grid;
+        grid-area: AUTHOR;
+        height: auto;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 90px;
+        grid-template-rows: auto 90px auto;
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+        grid-template-areas:
+            "NUMBER NUMBER ."
+            ". . AUTHOR"
+            "NAME NAME NAME";
+        }
+
+
+
+
+    #FIRST_TEXT_HOLDER {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "TITLE "
+            "VIDEO "
+            "TEXT ";   }
+
+    #TEXT_HOLDER {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            " TITLE "
+            " TEXT ";       }
+
+
+    #IMAGE_TEXT_HOLDER {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            " TITLE "
+            " IMAGE "
+            " TEXT ";           }
+
+    /*SECTION_1/////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+    /*SECTION_2////BLOG/////////////////////////////////////////////////////////////////////////////////////*/
+    .grid_0 {
+        position: relative;
+        width: 100%;
+        background-color: rgb(23 23 23);
+        display: grid;
+
+        padding-left: 20px;
+        padding-right: 20px;
+        grid-row-gap: 20px;
+        grid-template-rows: 0px auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: "  .  "
+            " MAIN-AREA ";
+        margin-bottom: 0px;
+    }
+
+
+    #LINK_HOLDER {
+        position: relative;
+        grid-area: CONTENT;
+        background-color: #efefef;
+        width: 100%;
+        left: 0px;
+    }
+
+
+
+
+
+    #BLOGIMAGE_HOLDER {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-area: MAIN-AREA;
+        position: relative;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    #BLOGIMAGE {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: grid;
+        grid-row-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px auto auto;
+        grid-template-areas:
+            "IMAGE "
+            "TEXT "
+            "SHARE ";
+    }
+
+
+    #BLOG_SMALL_1 {
+        grid-area: 1;
+        width: 100%;
+        height: 100%;
+        max-height: 0;
+        display: grid;
+        grid-row-gap: 2.5px;
+        grid-column-gap: 16.5px;
+        grid-template-columns: 30px 1fR 90px;
+        grid-template-rows: 30px 30px 5px auto auto 5px auto 5px auto;
+        grid-template-areas:
+
+            "NUMBER TITLE IMAGE"
+            ". TITLE IMAGE"
+            ". TITLE ."
+            ". TITLE AUTHOR"
+            ". TITLE AUTHOR"
+            ". . ."
+            ". TIMESTAMP TIMESTAMP"
+            ". . ."
+            ". . BORDER";
+    }
+
+    #IMAGE_POST_TITLE {
+        display: grid;
+        position: relative;
+        grid-area: TITLE;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "TITLE TITLE"
+            "SUBTITLE SUBTITLE"
+            "AUTHOR ."
+            "TIMESTAMP .";
+        grid-row-gap: 10px;
+        grid-column-gap: 5px;
+        width: 100%;
+        top: 30px;
+        left: 0px;
+        max-height: 0;
+    }
+
+
+    #ARTICLES {
+        grid-area: ARTICLES;
+        display: grid;
+        grid-row-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        width: 100%;
+        grid-template-areas:
+            "1"
+            "2"
+            "3"
+        ;
+    }
+
+
+    #NEWS {
+        grid-area: NEWS;
+        display: grid;
+        position: relative;
+        grid-row-gap: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30px auto;
+        background-color: rgb(23 23 23);
+        width: 100%;
+        height: 100%;
+        grid-template-areas:
+            "TOP_STORIES"
+            "ARTICLES";
+        top: 0px;
+    }
+
+    /*SECTION_2////BLOG/////////////////////////////////////////////////////////////////////////////////////*/
+
+
+    /*SECTION_3////TIKTOK///////////////////////////////////////////////////////////////////////////////////*/
+    #SHADOW_SECTION_TIKTOK {
+        display: none;
+    }
+
+    /*SECTION_3////TIKTOK///////////////////////////////////////////////////////////////////////////////////*/
+
+
+    /*SECTION_4////TITLE////////////////////////////////////////////////////////////////////////////////////*/
+    #MAIN_TEXT_HOLDER {
+        grid-area: MAIN-AREA;
+        display: grid;
+        width: 100%;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0px auto 0px;
+        grid-template-areas:
+            "."
+            "TEXT"
+            "."
+    }
+
+
+
+
+
+    #SUB_TEXT_HOLDER {
+        display: none;
+    }
+
+
+
+
+
+
+
+    #SUB_TEXT_HOLDER_MOBILE {
+        display: flex;
+        position: relative;
+        grid-area: TEXT;
+        top: 0px;
+    }
+
+
+
+    /*SECTION_4////TITLE////////////////////////////////////////////////////////////////////////////////////*/
+
+
+ 
+
+  
+
+    /*SECTION_10////TAG/////////////////////////////////////////////////////////////////////////////////////*/
+    #SHADOW_SECTION_TAG {
+        display: none;
+    }
+
+    #SHADOW_SECTION_TAG {
+        position: relative;
+        width: 100%;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        background-color: rgb(23, 23, 23);
+        z-index: -30000;
+        ;
+        top: 0px;
+    }
+
+    #TAG_HOLDER {
+        grid-area: MAIN-AREA;
+        display: grid;
+        width: 100%;
+        grid-column-gap: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "TAG";
+    }
+
+    #SERVICES_HOLDER {
+        position: relative;
+        grid-area: SERVICES;
+        width: 100%;
+        top: 0px;
+    }
+
+    /*SECTION_10////TAG/////////////////////////////////////////////////////////////////////////////////////*/
+
+}

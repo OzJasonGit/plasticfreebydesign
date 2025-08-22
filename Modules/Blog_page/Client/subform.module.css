@@ -1,0 +1,101 @@
+#_H1 {
+    margin-bottom: 0px;
+}
+
+
+#_H1_2 {
+    margin-bottom: 0px;
+}
+
+
+#_H2 {
+    margin-bottom: 0px;
+}
+
+
+#_H3 {
+    margin-bottom: 0px;
+}
+
+#_H4 {
+    margin-bottom: 0px;
+}
+
+
+#_H5 {
+    margin-bottom: -2.5px;
+}
+
+
+#TEXT_OUTLINE {
+    -webkit-text-stroke: 0.175px rgb(120, 120, 120);
+}
+
+#SUBSCRIBE {
+    position: relative;
+    grid-area: FORM;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    column-gap: 15px;
+    grid-template-areas:
+        "FORM";
+}
+
+#FORM {
+    display: grid;
+    grid-area: FORM;  
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 62.5px 10px;
+    column-gap: 15px;
+    grid-template-areas:
+        "INPUT"
+        "BUTTON";
+}
+
+#FORM_ITEM {
+    grid-area: INPUT;
+    width: 100%;
+    height: 62.5px;   
+}
+
+
+#FORM_BUTTON {
+    grid-area: BUTTON;
+    width: 100%;
+    height: 62.5px;
+}
+
+
+#FORM_INPUT {
+    width: 100%;
+    height: 62.5px;
+    margin-bottom: 0;
+}
+
+
+
+@media all and (min-width: 480px) {
+    #SUBSCRIBE {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto;
+        grid-template-areas: "FORM BUTTON";
+    }
+
+    #FORM_BUTTON {
+        width: auto;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #FORM_BUTTON {
+        width: 60%;
+    }
+}
